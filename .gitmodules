@@ -1,0 +1,3 @@
+[submodule "Hw1_Hangman_game"]
+	path = Hw1_Hangman_game
+	url = git@github.com:central-university-dev/backend-academy_2024_project_1-go-Matthew11K.git

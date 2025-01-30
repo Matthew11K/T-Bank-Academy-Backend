@@ -1,0 +1,17 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/central-university-dev/backend_academy_2024_project_4-go-Matthew11K/internal/application
+BenchmarkSingleThreaded-8                      	       1	65510048542 ns/op	  537752 B/op	     107 allocs/op
+--- BENCH: BenchmarkSingleThreaded-8
+    benchmark_test.go:47: Однопоточная версия заняла: 1m5.510047916s
+BenchmarkRenderMultiThreaded_LessThanCores-8   	       1	21562727125 ns/op	   23760 B/op	      14 allocs/op
+--- BENCH: BenchmarkRenderMultiThreaded_LessThanCores-8
+    benchmark_test.go:83: Многопоточная версия (< ядер) заняла: 21.562726583s
+BenchmarkRenderMultiThreaded_EqualToCores-8    	       1	12919743583 ns/op	   53904 B/op	      33 allocs/op
+--- BENCH: BenchmarkRenderMultiThreaded_EqualToCores-8
+    benchmark_test.go:119: Многопоточная версия (= ядер) заняла: 12.919742958s
+BenchmarkRenderMultiThreaded_MoreThanCores-8   	       1	14193884750 ns/op	   58896 B/op	      32 allocs/op
+--- BENCH: BenchmarkRenderMultiThreaded_MoreThanCores-8
+    benchmark_test.go:155: Многопоточная версия (> ядер) заняла: 14.1938845s
+PASS
+ok  	github.com/central-university-dev/backend_academy_2024_project_4-go-Matthew11K/internal/application	114.527s

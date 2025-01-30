@@ -1,0 +1,5 @@
+with-expecter: true
+filename: '{{.InterfaceName}}Mock.go'
+mockname: '{{.InterfaceName}}Mock'
+outpkg: mocks
+
